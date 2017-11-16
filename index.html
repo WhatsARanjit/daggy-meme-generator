@@ -34,7 +34,20 @@
 </table>
 <button onclick='meme();'>Submit</button>
 <br><br>
-<div id='output'></div>
+
+<div id='results' hidden>
+  <h4>Image</h4>
+  <div id='output'></div>
+
+  <h4>HTML</h4>
+  <table id='meme'>
+    <tr>
+      <td class='bubble'></td>
+    </tr><tr class='icon'>
+      <td><img class='icon' src='./images/daggy.png' /><td>
+    </tr>
+  </table>
+</div>
 
 <script type='text/javascript'>
   // Catch Enter
@@ -46,14 +59,6 @@
     }
   });
 </script>
-
-<table id='meme' hidden>
-  <tr>
-    <td class='bubble'></td>
-  </tr><tr class='icon'>
-    <td><img class='icon' src='./images/daggy.png' /><td>
-  </tr>
-</table>
 
 </body>
 </html>

@@ -14,11 +14,10 @@ function meme() {
   $('td.bubble').html(text);
 
   // http://html2canvas.hertzen.com/index.html
-  $('table#meme').show();
+  $('#results').show();
   html2canvas(document.getElementById('meme'), {
     onrendered: function(canvas) {
       $('#output').html(canvas);
-      $('table#meme').hide();
     },
     width: $('#meme').width()
   });
