@@ -1,0 +1,54 @@
+.bubble {
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  background: #FFFCCF;
+  border-radius: 22px;
+  border: #000000 solid 1px;
+  font-family: 'Georgia';
+  max-width: 300px;
+  min-width: 200px;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.bubble:after {
+  border-color: #FFFCCF transparent;
+  border-style: solid;
+  border-width: 42px 12px 2px;
+  bottom: -42px;
+  content: '';
+  display: block;
+  left: 88%;
+  margin-left: -12px;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+}
+
+.bubble:before {
+  border-color: #000000 transparent;
+  border-style: solid;
+  border-width: 42px 12px 0;
+  bottom: -43px;
+  content: '';
+  display: block;
+  left: 88%;
+  margin-left: -12px;
+  position: absolute;
+  width: 0;
+  z-index: 0;
+}
+
+img.icon {
+  float: right;
+  height: 100px;
+  margin-top: 50px;
+  width: auto;
+}
+
+.button {
+  background: #FFFCCF;
+  margin: 10px 5px 10px 5px;
+}

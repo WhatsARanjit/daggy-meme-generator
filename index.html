@@ -1,25 +1,59 @@
+<html>
+<head>
+<title>Daggy Meme Generator</title>
+<link rel='stylesheet' href='css/daggy.css'>
+<link href='http://puppet.com/favicon.ico' rel='shortcut icon'>
+<script src="js/html2canvas.min.js"></script>
+<script src="js/daggy.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+
 <h3>Daggy Meme Generator</h3>
-<form action='meme.html' method='GET'>
-  <table>
-    <tr>
-      <td>
-        Question:
-      </td><td>
-        <input type='text' name='question'></input><br>
-      </td>
-    </tr><tr>
-      <td>
-        Answer 1:
-      </td><td>
-        <input type='text' name='answer1'></input><br>
-      </td>
-    </tr><tr>
-      <td>
-        Answer 2:
-      </td><td>
-        <input type='text' name='answer2'></input><br>
-      </td>
-    </tr>
-  </table>
-  <button type='submit'>Submit</button>
-</form>
+<table>
+  <tr>
+    <td>
+      Question:
+    </td><td>
+      <input type='text' name='question'></input><br>
+    </td>
+  </tr><tr>
+    <td>
+      Answer 1:
+    </td><td>
+      <input type='text' name='answer1'></input><br>
+    </td>
+  </tr><tr>
+    <td>
+      Answer 2:
+    </td><td>
+      <input type='text' name='answer2'></input><br>
+    </td>
+  </tr>
+</table>
+<button onclick='meme();'>Submit</button>
+<br><br>
+<div id='output'></div>
+
+<script type='text/javascript'>
+  // Catch Enter
+  $('input').keypress(function(e) {
+    if (e.which == '13') {
+      e.preventDefault();
+      meme();
+      return false
+    }
+  });
+</script>
+
+<table id='meme' hidden>
+  <tr>
+    <td class='bubble'></td>
+  </tr><tr class='icon'>
+    <td><img class='icon' src='./daggy.png' /><td>
+  </tr>
+</table>
+
+</body>
+</html>
