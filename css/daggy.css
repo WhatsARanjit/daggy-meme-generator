@@ -1,9 +1,9 @@
 .bubble {
   -moz-border-radius: 22px;
   -webkit-border-radius: 22px;
-  background: #FFFCCF;
   border-radius: 22px;
-  border: #000000 solid 1px;
+  background: #FFFCCF;
+  border: #000000 solid 1.1px;
   font-family: 'Georgia';
   max-width: 300px;
   min-width: 200px;
@@ -49,6 +49,10 @@ img.icon {
 }
 
 .button {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   background: #FFFCCF;
+  border: #000000 solid 1.1px;
   margin: 10px 5px 10px 5px;
 }
